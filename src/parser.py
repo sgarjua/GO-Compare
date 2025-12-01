@@ -6,7 +6,7 @@ from typing import Dict, Tuple
 
 class Parser:
 
-    def init(self, description: str, args: Dict[tuple, Dict]):
+    def __init__(self, description: str, args: Dict[tuple, Dict]):
         '''
         Descripción: un string con una descripción.
         argumentos: esto tiene su cosa; como lo haces tú es añadir primero el nombre corto del argumento, luego el largo
