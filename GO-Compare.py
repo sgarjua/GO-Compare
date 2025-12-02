@@ -5,8 +5,8 @@
 from pathlib import Path
 from src.parser import parse_arguments
 from src.stats import calc_stats
-from src.io_utils import write_header, append_row
-from src.table import calc_overlap_por_prote
+from src.table import write_header, append_row
+from src.overlap import calc_overlap_por_prote
 from src.plotting import plot_venn
 
 
