@@ -37,7 +37,7 @@ def main():
         "GOs solapados (total)",
         "% (H|F)"
     ]
-    asegurar_cabecera(outfile, cabecera)
+    write_header(outfile, cabecera)
 
     with tsv_path.open(encoding="utf-8") as f:
         for line in f:
@@ -97,11 +97,11 @@ def main():
                 total_solapados,
                 f"{solape_h:.3f} | {solape_f:.3f}"
             ]
-            append_fila(outfile, fila)
+            append_row(outfile, fila)
 
         total, gos_totales_h, gos_totales_f, total_solapados = calc_total(outfile)        
-        append_fila(outfile, total)
-        venn = diagrama_venn(gos_totales_h, gos_totales_f, total_solapados)
+        append_row(outfile, total)
+        venn = plot_venn(gos_totales_h, gos_totales_f, total_solapados)
 
 
 if __name__ == "__main__":
