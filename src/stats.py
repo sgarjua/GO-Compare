@@ -1,5 +1,6 @@
 
 from typing import Dict, Tuple
+from pathlib import Path
 
 def calc_stats(file, species: str, destino: int):
     """
