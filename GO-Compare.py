@@ -3,11 +3,11 @@
 
 
 from pathlib import Path
-from .cli import parse_arguments
-from .stats import calc_stats
-from .io_utils import write_header, append_row
-from .overlap import calc_overlap_por_prote
-from .plotting import plot_venn
+from src.cli import parse_arguments
+from src.stats import calc_stats
+from src.io_utils import write_header, append_row
+from src.table import calc_overlap_por_prote
+from src.plotting import plot_venn
 
 
 def main():
@@ -60,6 +60,6 @@ def main():
     # diagrama final
     plot_venn(gh, gf, total_sol)
 
-    
+
 if __name__ == "__main__":
     main()
