@@ -2,7 +2,7 @@
 from typing import Dict, Tuple
 from pathlib import Path
 
-def calc_stats(file, species: str, destino: int):
+def calc_stats(file, species: str, destino: int, resultados: Dict[str, Tuple[list, list]]) -> Tuple[int, int, int, int, float, float]:
     """
     Lee un archivo de resultados y guarda los GO en resultados[prot][destino],
     donde destino=0 -> Homología, destino=1 -> FANTASIA.
