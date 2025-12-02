@@ -19,7 +19,7 @@ def main():
     )
 
     # 3. Parsear argumentos
-    args = my_parser.get().parse_args()
+    args = my_parser.parse_args()
 
     print(args)
 
