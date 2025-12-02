@@ -1,7 +1,7 @@
 from matplotlib_venn import venn2
 import matplotlib.pyplot as plt
 
-def diagrama_venn(gos_totales_h: float, gos_totales_f: float, total_solapados: float):
+def plot_venn(gos_totales_h: float, gos_totales_f: float, total_solapados: float):
     A = gos_totales_h
     B = gos_totales_f
     AB = round(total_solapados, 1)
